@@ -1,6 +1,6 @@
 <div>
-  <h3 class="col-md-12 text-center">Or sign up using your email</h3>
-  <div class="col-xs-offset-2 col-xs-8 col-md-offset-4 col-md-4">
+  <h3 class="col-md-12 text-center">Sign up</h3>
+  <div class="col-xs-offset-2 col-xs-8 col-md-offset-4 col-md-4 login-form-bg">
     <form name="vm.userForm" ng-submit="vm.signup(vm.userForm.$valid)" class="signin" novalidate autocomplete="off">
       <fieldset>
         <div class="form-group" show-errors>
@@ -47,11 +47,11 @@
           <uib-progressbar value="requirementsProgress" type="{{requirementsColor}}"><span style="color:white; white-space:nowrap;">{{requirementsProgress}}%</span></uib-progressbar>
         </div>
         <div class="text-center form-group">
-          <button type="submit" class="btn btn-primary">Sign up</button>
+          <button type="submit" class="btn btn-primary btn-lg">Sign up</button>
           &nbsp; or&nbsp;
           <a ui-sref="authentication.signin" class="show-signup">Sign in</a>
         </div>
-        <div ng-show="vm.error" class="text-center text-danger">
+        <div ng-show="vm.error" class="text-center text-danger phuc">
           <strong ng-bind="vm.error"></strong>
         </div>
       </fieldset>
