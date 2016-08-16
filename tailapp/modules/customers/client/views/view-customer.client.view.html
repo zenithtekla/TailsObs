@@ -1,6 +1,12 @@
 <section>
   <div class="page-header">
-    <h1 data-ng-bind="vm.customer.name"></h1>
+    <h1>{{vm.customer.firstName}} {{vm.customer.lastName}}</h1>
+    <h2 data-ng-bind="vm.customer.surburb"></h2>
+    <h2 data-ng-bind="vm.customer.country"></h2>
+    <h2 data-ng-bind="vm.customer.industry"></h2>
+    <h2 data-ng-bind="vm.customer.email"></h2>
+    <h2 data-ng-bind="vm.customer.phone"></h2>
+    <h2 data-ng-bind="vm.customer.channel"></h2>
   </div>
   <div class="pull-right"
        data-ng-show="vm.customer.isCurrentUserOwner">

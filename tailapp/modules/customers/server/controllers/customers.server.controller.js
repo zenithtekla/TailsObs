@@ -13,6 +13,7 @@ var path = require('path'),
  * Create a Customer
  */
 exports.create = function(req, res) {
+  console.log(req.body);
   var customer = new Customer(req.body);
   customer.user = req.user;
 
